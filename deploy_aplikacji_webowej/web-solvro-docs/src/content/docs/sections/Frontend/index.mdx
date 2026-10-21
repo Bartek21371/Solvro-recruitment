@@ -1,0 +1,78 @@
+---
+title: Tutaj zacznij!
+description: Wszystko co musisz wiedzieć o programowaniu frontu w Solvro
+sidebar:
+  order: 1
+---
+
+import { Steps, LinkCard, CardGrid, Card } from "@astrojs/starlight/components";
+import { getTeam, TeamMembers } from "/src/components/TeamMembers";
+
+Witaj w najlepszej sekcji Solvro - Frontendzie! 🎉
+
+Zajmujemy się tworzeniem aplikacji webowych, które nadrabiają zaległości sekcji backendowej. Głównie korzystamy z **React** i **Next.js**, a nienawiść do Windowsa jest w naszej krwi. Na każdy problem mamy odpowiednią libkę i lepiej nas nie pytajcie jak często je aktualizujemy :D
+
+## Dla NOWYCH członków
+
+1. **OBOWIĄZKOWO** zapoznaj się z onboardingiem, gdzie są wszystkie potrzebne informacje, aby dobrze zacząć swoją przygodę w Solvro
+
+   <LinkCard
+     title="Onboarding 😍"
+     description="Od zera do Solvrowicza!"
+     href="/sections/frontend/onboarding"
+   />
+
+2. Odnośnie technologii, zerknij na naszą roadmapę, z niej dowiesz się co **MUSISZ** wiedzieć, aby działać w Solvro :3
+
+   <LinkCard
+     title="Roadmap 🤔"
+     description="Jakie technologie są używane w Solvro?"
+     href="/sections/frontend/roadmap"
+   />
+
+## Dla STARYCH wyjadaczy
+
+1. Najlepsze praktyki tworzenia aplikacji
+
+   <LinkCard
+     title="Projektowanie aplikacji"
+     description="Jak zrobić śliczną aplikację?"
+     href="/sections/frontend/praca-w-projekcie/projektowanie/"
+   />
+   <LinkCard
+     title="Programowanie"
+     description="Jak pisać super kodzik?"
+     href="/sections/frontend/praca-w-projekcie/programowanie/"
+   />
+   <LinkCard
+     title="Testowanie"
+     description="Jak obyć się bez błędów?"
+     href="/sections/frontend/praca-w-projekcie/testowanie/"
+   />
+   <LinkCard
+     title="Wdrożenie"
+     description="Pokazujemy światu naszą aplikację!"
+     href="/sections/frontend/praca-w-projekcie/wdrozenie/"
+   />
+
+### Nasz zespół
+
+<CardGrid>
+  <Card title="Bartosz Gotowski">
+    Przewodniczący sekcji Frontend
+    <br />
+  </Card>
+  ![Uśmiechnięty Bartosz Gotowski patrzący wprost w
+  obiektyw](../../../../assets/people/bartosz_gotowski.png)
+</CardGrid>
+
+<CardGrid>
+  <Card title="Kamil Marczak">
+    Wice-przewodniczący sekcji Frontend
+    <br />
+  </Card>
+  ![Mega przystojny i zamyślony
+  Kamilek](../../../../assets/people/kamil_marczak.png)
+</CardGrid>
+
+{<TeamMembers team={await getTeam("Frontend")} />}
