@@ -1,0 +1,3 @@
+[submodule "deploy_aplikacji_webowej/deploy_aplikacji_webowej/web-solvro-docs"]
+	path = deploy_aplikacji_webowej/deploy_aplikacji_webowej/web-solvro-docs
+	url = git@github.com:Solvro/web-solvro-docs.git
