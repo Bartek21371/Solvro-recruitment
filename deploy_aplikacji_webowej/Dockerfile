@@ -12,9 +12,9 @@ WORKDIR /app
 RUN git clone https://github.com/Solvro/web-solvro-docs.git .
 
 #Install dependencies by using npm
-RUN npm pkg set 'allowScripts.sharp=true' \
-    npm ci \
-    npm run build \
+RUN npm pkg set 'allowScripts.sharp=true' && \
+    npm ci && \
+    npm run build 
 
 
 ##Stage of serve
