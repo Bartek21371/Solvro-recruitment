@@ -20,7 +20,7 @@ RUN npm pkg set 'allowScripts.sharp=true' \
 ##Stage of serve
 
 #Set image of nginx
-FROM nginx:slim AS serve
+FROM nginx:stable AS serve
 
 #Copy dist
 COPY --from=builder /app/dist /usr/share/nginx/html
