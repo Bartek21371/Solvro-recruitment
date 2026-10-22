@@ -11,7 +11,7 @@ WORKDIR /app
 #Clone repo
 RUN git clone https://github.com/Solvro/web-solvro-docs.git .
 
-#Install dependencies by using npm
+#Install dependencies by using npm and change param of allowScripts
 RUN npm pkg set 'allowScripts.sharp=true' && \
     npm ci && \
     npm run build 
