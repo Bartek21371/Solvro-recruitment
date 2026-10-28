@@ -12,5 +12,5 @@ Sprawozdania zawierają:
 - uzyskane wyniki i podsumowania.
 
 
-##Autor
+## Autor
 **Bartosz Marcińczyk**
